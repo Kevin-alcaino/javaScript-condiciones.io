@@ -1,4 +1,25 @@
 section{
     display: flex;
-    
+    flex-direction: row;
+    align-items: center;
+   justify-content: center;
+   gap: 25px;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+}
+
+.resultado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
