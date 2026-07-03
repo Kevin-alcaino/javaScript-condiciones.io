@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/click.css">
     <title>Imagen Click</title>
 </head>
 <body>
+    <section>
+    <img src="assets/img/gato volador.jpg" alt="gato volador" onclick="
+        let borde = document.querySelector('img');
+        if (borde.style.border){
+            borde.style.border = ''
+        } else {borde.style.border = '5px solid blue';}"
+        
+    </section>
 <script src="assets/javaScript/click.js"></script>   
 </body>
 </html>
