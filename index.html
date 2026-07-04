@@ -7,8 +7,116 @@
     <title>Condiciones javaScript</title>
 </head>
 <body>
-    <h2>Condiciones javaScript.</h2>
+    <h1>Condiciones javaScript.</h1>
+    
+   <!-- Ejercicio Clicks -->
+
+    <div class="click">
+    <section class="section1">
+     <img src="assets/img/gato volador.jpg" alt="gato volador" onclick="
+        let borde = document.querySelector('img');
+        if (borde.style.border){
+            borde.style.border = ''
+        } else {borde.style.border = '5px solid blue';}" 
+    </section>
+
+    <!-- Ejercicio Stickers -->
+
+    <div class="stickers">
+    <section>
+    <div>
+    <img src="assets/img/sticker 1.jpg" alt="">
+    <input type="number" id="adultos" value="0"> 
+    </div>
    
+    <div>
+    <img src="assets/img/stickers 2.png" alt="">
+    <input type="number" id="ninos" value="0">
+    </div>
+    
+    <div>
+    <img src="assets/img/stickers 3.jpg" alt="">
+    <input type="number" id="cortesia" value="0">
+    </div>
+    </section>
+    </div>
+
+    <div class="resultado">
+        <button id="calcular" onclick="
+            const total = Number(document.querySelector('#adultos').value) + 
+                          Number(document.querySelector('#ninos').value) + 
+                          Number(document.querySelector('#cortesia').value);
+            
+            if (total <= 10) {
+                document.querySelector('#resultado').textContent = `llevas ${total} stickers`;
+            } else {
+                document.querySelector('#resultado').textContent = 'llevas demasiados stickers';
+            }
+        ">Calcular</button>
+        
+        <p id="resultado"></p>
+    </div>
+   </div>
+
+   <!-- Ejercicio Password -->
+
+   <div class="password"> <section class="targeta">
+    <h1>Ingrese contraseña</h1>
+    <div class="clave">
+        <select name="clave1" id="clave1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+        <select name="clave2" id="clave2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+        <select name="clave3" id="clave3">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+    </div>
+    <button onclick="
+   let clave = document.querySelector('#clave1').value +
+   document.querySelector('#clave2').value +
+   document.querySelector('#clave3').value;
+
+   if(clave == '911'){
+    document.querySelector('#resulta2').textContent = 'clave 1 correcta';
+   }
+   else if(clave == '714'){
+    document.querySelector('#resulta2').textContent = 'clave 2 correcta';
+   }
+   else{
+    document.querySelector('#resulta2').textContent = 'clave incorrecta';
+   }
+
+
+    ">verificar</button>
+    <p id="resulta2"></p>
+    </section>
+</div>
 
  <script src="assets/javaScript/javaScript.js"></script>   
 </body>
