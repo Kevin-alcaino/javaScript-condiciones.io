@@ -130,6 +130,10 @@ select{
     max-width: 350px;
     height: 350;
 }
+
+.stickers{
+    padding: 0 20px 0 20px;
+}
   
 }
 
