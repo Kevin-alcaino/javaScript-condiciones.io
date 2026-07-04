@@ -23,10 +23,21 @@
     <input type="number" id="cortesia" value="0">
     </div>
     </section>
-    
+
     <div class="resultado">
-    <button id="calcular">Calcular</button>
-    <p id="resultado"></p>
+        <button id="calcular" onclick="
+            const total = Number(document.querySelector('#adultos').value) + 
+                          Number(document.querySelector('#ninos').value) + 
+                          Number(document.querySelector('#cortesia').value);
+            
+            if (total <= 10) {
+                document.querySelector('#resultado').textContent = `llevas ${total} stickers`;
+            } else {
+                document.querySelector('#resultado').textContent = 'llevas demasiados stickers';
+            }
+        ">Calcular</button>
+        
+        <p id="resultado"></p>
     </div>
 
  <script src="assets/javaScript/stickers.js"></script>
