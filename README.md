@@ -37,7 +37,7 @@ En este desafio consta de 3 ejercicios:
  ┗ stickers.html
   ```
 ## 🔗 Links
-Actualmente estoy trabajando en [Desafio n°2 JavaScript - Condiciones](https://kevin-alcaino.github.io/css.avanzado.flexbox/)
+Actualmente estoy trabajando en [Desafio n°2 JavaScript - Condiciones](https://kevin-alcaino.github.io/javaScript-condiciones.io/)
 
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://kevin-alcaino.github.io/Kevin-alcaino.io/)
 
